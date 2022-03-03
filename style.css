@@ -133,6 +133,7 @@ align-self: center;
   align-self: center;
   object-fit: contain;
   margin-right: 5%;
+  margin-left: 2%;
 }
 
 
@@ -188,11 +189,18 @@ align-self: center;
   font-size: 1.3em;
 }
 
+.contenedor-titulo-finalizar{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: 4%;
+  flex-direction: column;
+}
+
 .contenedor-boton-finalizar{
   display: flex;
   flex-direction: row;
   margin-left: auto;
-  flex-direction: column;
 }
 
 .boton-finalizar{
@@ -203,10 +211,22 @@ align-self: center;
   padding: 2%;
   width: 10vw;
   height: 5vh;
-  margin-left: auto;
   font-weight: bold;
+  margin-right: 5%;
 }
 
+.boton-finalizar-no{
+  color:#D12222;
+  background-color: white;
+  font-size: 1.1em;
+  border: #D12222 2px solid;
+  padding: 2%;
+  width: 10vw;
+  height: 5vh;
+  margin-left: 5%;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 .card{
@@ -216,7 +236,6 @@ align-self: center;
   border: none;
   border-radius: 40px;
   margin: 0% 5% 0% 5%;
-  background-color: #F9F8F8;
 
 }
 
@@ -251,7 +270,7 @@ card-group > .card:not(:first-child) .card-header, .card-group > .card:not(:firs
 .card-title{
   margin-bottom: 5%;
   font-family: "Josefin";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   color: #6ED2AE;
 }
