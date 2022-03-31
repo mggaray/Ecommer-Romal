@@ -18,7 +18,7 @@
   <body class="principal">
   
    <!-------------------BARRA NAVEGACION con BOOTSTRAP--------------------->
-   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #411B1B;">
+   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="index.html" style="font-style: 2em; margin-left: 1%; font-weight: bolder;">Romal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,57 +31,54 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link " href="index.html" >Inicio</a>
+          <a class="nav-link " href="index.html" style="color: #6ED2AE; font-weight: bold;">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="productos.html" style="color: #6ED2AE; font-weight: bold;">Productos</a>
+          <a class="nav-link" href="productos.html">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="carrito.html">Carrito</a>
+          <a class="nav-link" href="carrito.html" style="margin-left: 60vw;">Carrito</a>
         </li>
       </ul>
 
     </div>
   </nav>
-  
-<div class="contenido-categoria">
+
+<div class="contenido">
+  <div class="contenido-categoria">
 
     <!----------------------Menu lateral Bootstrap---------------------------->
 
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="  width: 15vw; background-color: #411B1B; height: 160vh;">
+
+
+    <div class="flex-column flex-shrink-0 p-3 text-white" id="barraLateral" >
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <svg class="bi me-2" width="30" height="32"><use xlink:href="#bootstrap"></use></svg>
         <span class="fs-4">Productos</span>
       </a>
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-          <a href="" class="nav-link text-white" aria-current="page">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+          <a href="#" class="nav-link text-white" aria-current="page">
             Calzado
           </a>
         </li>
         <li>
           <a href="#" class="nav-link text-white">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
             Accesorios
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link" style="color: #6ED2AE;">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          <a href="categoria.html" class="nav-link text-white">
             Remeras
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+          <a href="#" class="nav-link text-white">      
             Pantalones
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
-            <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+          <a href="#" class="nav-link text-white">   
             Otros
           </a>
         </li>
@@ -96,7 +93,8 @@
         
 
         <div class="contenedor-productos-categoria">
-            <div class="card-group">
+            <div class="card-group productos">
+
               <div class="card">
                 <img class="card-img-top" src="https://http2.mlstatic.com/D_NQ_NP_811163-MLA42449262259_072020-W.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -105,6 +103,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
+
               <div class="card" style="size: 60%;">
                 <img class="card-img-top" src="https://ferreira.vteximg.com.br/arquivos/ids/338374-588-588/fi_cl873140_1.jpg?v=637201696755500000" alt="Card image cap">
                 <div class="card-body">
@@ -113,19 +112,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"> Adidas deportiva</h5>
-                  <h5 class="card-precio"> $2000</h5>
-                  <a href=""><button class="boton-añadir">Añadir</button></a>
-                </div>
-              </div>
-            </div>   
-          </div>
 
-          <div class="contenedor-productos-categoria">
-            <div class="card-group">
               <div class="card">
                 <img class="card-img-top" src="https://johnfoosar.vteximg.com.br/arquivos/ids/157839-838-491/remera-frente-hombre.jpg?v=637282867894630000" alt="Card image cap">
                 <div class="card-body">
@@ -134,6 +121,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
+
               <div class="card">
                 <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX-Cb63TqHbczB4XLIGwxTTx1Q64Qqh1Qdg&usqp=CAU alt="Card image cap">
                 <div class="card-body">
@@ -142,6 +130,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
+
               <div class="card">
                 <img class="card-img-top" src="http://http2.mlstatic.com/D_780979-MLA45357273890_032021-O.jpg " alt="Card image cap">
                 <div class="card-body">
@@ -150,11 +139,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="contenedor-productos-categoria">
-            <div class="card-group">
+              
               <div class="card">
                 <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnT8bClehHAsoJFTSs6QM_V85BlBXoQrKX2g&usqp=CAU" alt="Card image cap">
                 <div class="card-body">
@@ -163,6 +148,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
+
               <div class="card">
                 <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpJULh12z_fYJF2X0Tp2PI5f1_p-phjJeZHJmNDKN2iUOi7qaY436q4PZG4q_fPqePr4s&usqp=CAU" alt="Card image cap">
                 <div class="card-body">
@@ -171,6 +157,7 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
+
               <div class="card">
                 <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRJpy1LLZYS4LJS9Ig_6h6ipvS4SJSp5pe-Q&usqp=CAU" alt="Card image cap">
                 <div class="card-body">
@@ -179,14 +166,13 @@
                   <a href=""><button class="boton-añadir">Añadir</button></a>
                 </div>
               </div>
-            </div>   
-          </div>
-
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-
-    <footer>
+  <footer>
         <ul class="listaFooter">
           <li>
           <a href="">Contacto</a>  
@@ -200,8 +186,6 @@
            <p>03416186356</p>
          </div>
       </footer>
-  
-  
     </body>
   </html>
   

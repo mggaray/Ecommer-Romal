@@ -1,12 +1,22 @@
 body,
 html {
-  width: 99vw;
-  font-family: 'Josefin', sans-serif;
-  overflow-x: hidden;
+  font-family:monospace;
+  transition: 0.6s;
+}
+
+:root{
+  --bordo:#662211;
 }
 
 .navbar{
-  box-shadow: 4px 2px 5px -1px rgba(0,0,0,0.41);
+  background-color: var(--bordo);
+  box-shadow: 4px 2px 5px -1px rgba(0,0,0,0.2);
+  font-size: 1.3rem;
+}
+
+.navbar > a{
+  font-size: 2rem;
+  padding: 0.7rem;
 }
 
 .nav-link-activo{
@@ -15,74 +25,85 @@ html {
 }
 
 
+.contenedor{
+  width: 70%;
+  margin: 0 auto;
+}
+
 .contenido{
-  border-top: 1px solid #411B1B;
-  height:110vh;
-  width: 99vw;
+  border-top: 1px solid var(--bordo);
   display: flex;
   background-color: #EEEEEE;
 }
+
+#barraLateral{
+  background-color: var(--bordo); 
+  padding: 2em;
+}
+
+#barraLateral > ul>li{
+  text-align: start;
+  font-size: 1.3rem;
+  padding: 0.8em 0.8em 0.8em 0em;
+  margin-bottom: 3%;
+}
+
+
 
 .contenido-categoria{
-  border-top: 1px solid #411B1B;
-  height:160vh;
-  width: 99vw;
+  border-top: 1px solid var(--bordo);
   display: flex;
   background-color: #EEEEEE;
 }
 
+
+.contenedor-categoria{
+  width: 70%;
+  margin: 0 auto;
+}
 
 .contenido-carrito{
-  border-top: 1px solid #411B1B;
+  border-top: 1px solid var(--bordo);
   height:110vh;
-  width: 99vw;
+  width: 100%;
   display: flex;
   background-color: #EEEEEE;
 }
-
-
-
 
 
 .fondo{
-  height: 60vh;
-  background-image:url("https://cdn2.hubspot.net/hubfs/3993861/ecommerce-alimentacion.png");
+  height: 40vh;
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/25/05/48/shopping-5217035_960_720.png);
+  object-fit: cover;
   box-shadow: 4px 2px 5px -1px rgba(0,0,0,0.41);
   display: flex;
   justify-content: center;
+  align-items: center;
   opacity: 0.85;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  border-radius: 60px;
 }
 
 
 .mensaje{
-display: flex;
-color: black;
-background-color: white;
-padding: 2%;
-border-radius: 40px;
-width: 35vw;
-height: 15vh;
-align-self: center;
-font-family: "Josefin";
-font-style: italic;
-font-size: 4em;
-font-weight: bold;
-justify-content: center;
-align-items: center;
-box-shadow: 4px 2px 5px -1px rgba(0,0,0,0.41);
-}
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  align-self: center;
+  font-size: 2.2rem;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 4px 2px 5px -1px rgba(0,0,0,0.41);
+  min-width: 60%;
+  }
 
-.contenedor{
-  height: 110vh;
-}
 
-.contenedor-categoria{
-  width: 160vw;
-}
+
 
 .titulo-categoria{
-margin-top: 5vh;
-font-family: "Josefin Sans";
+margin: 5vh 0vh 5vh 0vh;
 font-weight: bolder;
 text-align: center;
 align-self: center;
@@ -90,16 +111,14 @@ align-self: center;
 
 .contenedor-productos{
   display: flex;
-  height: 60vh;
-  width: 85vw;
   align-content: center;
   justify-content: center;
+  align-self: center;
+  max-width: 1200px;
 }
 
 .contenedor-productos-categoria{
   display: flex;
-  height: 50vh;
-  width: 90vw;
   align-content: center;
   justify-content: center;
 }
@@ -228,17 +247,6 @@ align-self: center;
   text-align: center;
 }
 
-
-.card{
-  width: 20vw;
-  height: 40vh;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
-  border: none;
-  border-radius: 40px;
-  margin: 0% 5% 0% 5%;
-
-}
-
 .card-group > .card:not(:first-child){
   border-radius: 40px;
 }
@@ -247,10 +255,34 @@ align-self: center;
   border-radius: 40px;
 }
 
+.card-group{
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.card{
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 40px;
+  padding: 1em;
+  min-width: 20%;
+}
+
+.card-group > .card{
+  flex: none;
+  flex: 0 0 26%;
+c
+}
+
+.card-group > .card + .card{
+  margin-left: 3%;
+}
 
 .card-img-top{
  height: 20vh;
- width: 15vw;
+ max-width: 15vw;
  margin-left: auto;
  margin-right: auto;
  align-content: center;
@@ -269,33 +301,32 @@ card-group > .card:not(:first-child) .card-header, .card-group > .card:not(:firs
 
 .card-title{
   margin-bottom: 5%;
-  font-family: "Josefin";
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bold;
   color: #6ED2AE;
 }
 
 .card-precio{
-  font-family: "Josefin";
   font-size: 2em;
   font-weight: bold;
 }
 
 .boton-añadir{
   padding: 4%;
-  background-color: #411B1B;
+  background-color: var(--bordo);
   color: white;
   border-radius: 15px;
 }
 
 
 footer{
- background-color: #411B1B;
+ background-color: var(--bordo);
  height: 15vh;
  display: flex;
  flex-direction: row;
  box-shadow: 6px 7px 5px -1px rgba(0,0,0,0.41);
  border-top:rgba(255, 255, 255, 0.1) solid 2px;
+ font-size: 1.4rem;
 }
 
 
@@ -325,7 +356,7 @@ footer{
 }
 
 .titulo-login{
-  background-color: #411B1B;
+  background-color: var(--bordo);
   padding:5%;
   margin-bottom: 20%;
   margin-top: -20%;
@@ -344,4 +375,143 @@ footer{
   width: 10vw;
   border:none;
   border-radius: 1em;
+}
+
+@media (max-width:750px) {
+
+        #barraLateral{
+          display: none;
+      }
+
+        .contenedor{
+          width: auto;
+        }
+
+        .contenedor-categoria{
+          width: auto;
+          margin: 0 auto;
+        }
+
+        .contenido-categoria{
+          width: auto;
+          margin: 0 auto;
+        }
+
+        .contenido{
+          border-top: 1px solid var(--bordo);
+          display: flex;
+          background-color: #EEEEEE;
+        }
+  
+      .principal{
+          background-color: #EEEEEE;
+        }
+
+        
+      .fondo{
+        padding: 10%;
+        margin-bottom: 20%;
+        background-size: cover;
+      }
+
+      .mensaje{
+        font-size: 1.6rem;
+        padding: 1em;
+      }
+      
+    
+        .contenedor-productos{
+          width: 100vw;
+
+        }
+        
+        .contenedor-productos-categoria{
+          display: flex;
+          align-content: center;
+          justify-content: center;
+        }
+        
+        .contenedor-carrito{
+          display: flex;
+          height: 80vh;
+          width: 90vw;
+          align-content: center;
+          justify-content: center;
+          margin: 5vh;
+          flex-direction: column;
+        }
+        
+        .producto-carrito{
+          width: 100%;
+          height: 25%;
+          background-color: white;
+          margin-bottom: 2vh;
+          border-radius: 30px;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          border-bottom: 2px rgba(0,0,0,0.8) solid;
+        }
+        
+        
+        .foto-producto{
+          height: 80px;
+          width: 80px;
+          align-self: center;
+          object-fit: contain;
+          margin-right: 5%;
+          margin-left: 2%;
+        }
+        
+        
+        .descripcion-producto{
+          font-size: 1.3em;
+          align-self: center;
+          color: #6ED2AE;
+          font-weight: bold;
+          text-align: left;
+        }
+        
+        .precio-producto{
+          display: flex;
+          font-size: 1.6em;
+          align-self: center;
+          margin: 0vw 5vw 0vw 2vw;
+          text-align: left;
+          width: 10vw;
+          justify-content: center;
+        }
+
+        .card{
+          width: 85%;
+          box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+          border: none;
+          border-radius: 40px;
+        }
+
+        .card-group{
+          justify-content: center;
+        }
+
+        .card-group > .card{
+          margin: 0 auto;
+          margin-bottom: 15%;
+        } 
+
+        .card-group > .card + .card {
+          margin: 0 auto;
+          margin-bottom: 15%;
+        }
+
+        .card-img-top{
+          height: 20vh;
+          margin: auto;
+          max-width: none;
+        }
+        
+        
+        footer{
+          padding: 3em;
+          height: 15%;
+        }
 }
