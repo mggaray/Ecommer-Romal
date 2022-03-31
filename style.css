@@ -273,12 +273,13 @@ align-self: center;
 .card-group > .card{
   flex: none;
   flex: 0 0 26%;
-c
+  margin: 3%;
 }
 
 .card-group > .card + .card{
   margin-left: 3%;
 }
+
 
 .card-img-top{
  height: 20vh;
@@ -508,7 +509,6 @@ footer{
           margin: auto;
           max-width: none;
         }
-        
         
         footer{
           padding: 3em;
