@@ -378,10 +378,72 @@ footer{
   border-radius: 1em;
 }
 
+#barraLateralMobile{
+  display: none;
+}
+
+.divisor{
+  color: white;
+  border: 2px white solid;
+}
+
 @media (max-width:750px) {
 
-        #barraLateral{
-          display: none;
+      #barraLateral{
+        display: none;
+      }
+
+      .fijo{
+        position: fixed;
+      }
+      
+
+      .displayNav{
+        display: flex !important;
+        z-index: 2;
+      }
+
+      #barraLateralMobile{
+        position: fixed;
+        margin-left: 50vw;
+        background-color:var(--bordo);
+        height: 50vh;
+        width: 50vw;
+        justify-self: end;
+      }
+
+
+      .listaMobile{
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        padding: 5%;
+        height: 20vh;
+        z-index: 5;
+      }
+
+      .listaMobile > a{
+        color: white;
+        text-decoration: none;
+      }
+    
+      nav > form{
+        display: none;
+      }
+
+      .navbar-toggler{
+        border: white 1px solid;
+        padding: 3%;
+        margin-right: 5%;
+      }
+
+      .navbar-dark .navbar-toggler{
+        border: white 1px solid;
+        color: white;
+      }
+
+      .navbar-toggler-icon{
+        background-image: ;
       }
 
         .contenedor{

@@ -6,6 +6,9 @@
 
     <title>Romal-Inicio</title>
 
+    <!-- Script -->
+    <script defer src="script.js"></script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -48,9 +51,9 @@
 
     <!----------------------Menu lateral Bootstrap---------------------------->
 
-    <div class="flex-column flex-shrink-0 p-3 text-white" id="barraLateral" >
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <span class="fs-4">Productos</span>
+    <div id="barraLateral" >
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none;">
+        <span  class="fs-4">Productos</span>
       </a>
       <hr>
       <ul class="nav nav-pills flex-column mb-auto">
@@ -82,6 +85,61 @@
       </ul>
       <hr>
     </div>
+
+<!------------ MOBILE--------------->
+
+    <div id="barraLateralMobile" >
+
+      <ul class="listaMobile">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #6ED2AE; font-weight: bold;">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="carrito.html">Carrito</a>
+        </li>
+
+<hr class="divisor">
+
+        <li class="nav-item ">
+          <a class="nav-link text-white" href="productos.html">Productos</a>
+        </li>
+        
+<hr class="divisor">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white" aria-current="page">
+            Calzado
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link text-white">
+            Accesorios
+          </a>
+        </li>
+
+        <li>
+          <a href="categoria.html" class="nav-link text-white">
+            Remeras
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link text-white">      
+            Pantalones
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="nav-link text-white">   
+            Otros
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+
 
 <!------------------------------------------ Fondo -------------------------------------------->
 <div class="contenedor">
